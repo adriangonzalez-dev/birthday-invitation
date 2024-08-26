@@ -1,0 +1,59 @@
+---
+import Divider from "./Divider.astro"
+---
+
+<section>
+   <Divider/>
+   <div class="container-div">
+       <p class="text-date">OCTUBRE</p>
+       <div class="info-container">
+            <div>
+                SABADO
+            </div>
+            <div class="child-info">
+                12
+            </div>
+            <div>
+                21:30HS
+            </div>
+       </div>
+       <p class="text-date">2024</p>
+   </div>
+    <Divider/>
+</section>
+
+<style>
+    section{
+        width: 90%;
+        margin-top: 2rem;
+    }
+    .container-div{
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-date{
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+
+    .info-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap:1rem;
+        font-size: 1.4rem;
+        height:3rem;
+    }
+
+    .info-container .child-info{
+        font-size: 2rem;
+        font-weight: 800;
+        padding: 0 .5rem;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+    }
+</style>

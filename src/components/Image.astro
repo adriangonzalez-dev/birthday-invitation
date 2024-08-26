@@ -1,0 +1,33 @@
+<div class="neon-container">
+    <img src="/flor2.webp" alt="" class="w-100 neon-image" loading="lazy"/>
+</div>
+
+<style>
+    .neon-container {
+        display: inline-block;
+        background-color: transparent;
+    }
+
+    .neon-image {
+        width: 150px;
+        height: auto;
+        filter: drop-shadow(0 0 0.5px #fdf76b) /* Primer resplandor cercano */
+                drop-shadow(0 0 2px #dd4eaf) /* Segundo resplandor más amplio */
+                drop-shadow(0 0 5px #df535a) /* Tercer resplandor más lejano */;
+        animation: neonPulse 2s infinite alternate;
+    }
+
+    @keyframes neonPulse {
+        0% {
+            filter: drop-shadow(0 0 0.5px #fdf76b)
+                    drop-shadow(0 0 1px #dd4eaf)
+                    drop-shadow(0 0 3px #df535a);
+        }
+        100% {
+            filter: drop-shadow(0 0 1px #fdf76b)  /* Aumenta el resplandor */
+                    drop-shadow(0 0 2px #dd4eaf)
+                    drop-shadow(0 0 6px #df535a);
+        }
+    }
+
+</style>
